@@ -1,0 +1,148 @@
+:root {
+  --Black: hsl(0, 0%, 0%);
+  --White: hsl(0, 0%, 100%);
+  --Green: hsl(75, 94%, 57%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 16px;
+  background-color: var(--Grey-900);
+  color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.sub__container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--Grey-800);
+  border-radius: 8px;
+  padding: 40px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sub__image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.email__container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.email__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.email__address {
+  font-size: 14px;
+  color: var(--White);
+}
+
+.location {
+  color: var(--Green);
+  margin-top: 10px;
+}
+
+.title {
+  color: var(--White);
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.bio {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.social__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.social__links {
+  background-color: var(--Grey-700);
+  border-radius: 8px;
+  text-align: center;
+  color: var(--White);
+  text-decoration: none;
+  padding: 12px 0;
+  transition: background-color 0.3s ease;
+}
+
+.social__links:hover {
+  background-color: var(--Green);
+  color: var(--Grey-900);
+}
+#currentUTCTime {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--White);
+  background-color: var(--Grey-700);
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 400px) {
+  .sub__container {
+    padding: 20px 10px;
+  }
+
+  .sub__image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bio {
+    font-size: 12px;
+  }
+}

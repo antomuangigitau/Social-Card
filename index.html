@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+    </style>
+    <title>Social Link Profile</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sub__container">
+        <div class="profile__container">
+          <img
+            class="sub__image"
+            data-testid="profilePicture"
+            src="./images//tonie.jpg"
+            alt="Tonie" />
+          <h1 data-testid="fullName">Antony Mwangi</h1>
+          <div class="email__container">
+            <img class="email__icon" src="./images//mail.png" alt="emailIcon" />
+            <h3 class="email__address" data-testid="emailAddress">
+              gitaumuangi@gmail.com
+            </h3>
+          </div>
+          <p data-testid="currentLocation" class="location">Thika, Kenya</p>
+          <p class="title" data-testid="jobTitle">"Front-end developer"</p>
+
+          <div class="utc-time">
+            <h3>Current UTC Time:</h3>
+            <span id="currentUTCTime" data-testid="currentUTCTime"></span>
+          </div>
+        </div>
+
+        <div class="bio">
+          <p data-testid="shortBio">
+            I am Antony Mwangi, a frontend developer skilled in React,
+            TypeScript, and Tailwind CSS. I enjoy building responsive and
+            user-friendly web applications with a focus on performance and
+            accessibility. I have experience working with modern UI libraries
+            and frameworks to create seamless user experiences. Passionate about
+            continuous learning, I am always exploring new tools and best
+            practices to improve my development skills. My goal is to contribute
+            to impactful projects and grow as a frontend developer.
+          </p>
+        </div>
+
+        <div class="social__container">
+          <a
+            class="social__links"
+            data-testid="socialLinks"
+            href="https://www.linkedin.com/in/antony-mwangi-gitau/"
+            >linkedin</a
+          >
+          <a
+            class="social__links"
+            data-testid="socialLinks"
+            href="https://github.com/antomuangigitau"
+            >Github</a
+          >
+          <a
+            class="social__links"
+            data-testid="socialLinks"
+            href="https://x.com/tonymwartial"
+            >Twitter</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
